@@ -25,11 +25,12 @@
             dataType: 'text',
             success: function (data) {
                 try {
-                    // Create a blob of the file content, so that we can blob url out of it, that can
+                    // Create a blob of the file content, so that we can create blob url out of it, that can
                     // be passed to create a web worker file (that runs in the background thread)
                     var blob =  new window.Blob([data], {type: 'text/javascript'});
-                    workerBlobUrl = window.URL.createObjectURL(blob);
+                    var workerBlobUrl = window.URL.createObjectURL(blob);
 
+                    // workerBlobUrl now is the url to worker file, now we need to create a web worker using this url.
                     var worker = new Worker(workerBlobUrl);
 
                     // Since, worker is ready, call the function of worker initialized with the worker instance
