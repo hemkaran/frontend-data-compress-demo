@@ -1,0 +1,20 @@
+{
+  "name": "frontend-compress-demo",
+  "version": "1.0.0",
+  "description": "A demo for showing how to compress data at frontend to send at backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "amdclean": "^2.7.0",
+    "grunt": "^1.0.2",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "pako": "^1.0.6"
+  }
+}
