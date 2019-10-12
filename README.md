@@ -28,7 +28,7 @@ This file demonstrate the use of web worker to compress the data. We want to sen
 5. You will see two events call in the network panel, check the request size of both the request.
 
 ## Setup
-2. Run `grunt` to build the files again if you have changed the worker.js file.
+1. Run `grunt` to build the files again if you have changed the worker.js file.
 
 ### Copyright and license
 
